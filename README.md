@@ -1,5 +1,28 @@
 # MauiHowTo
 
+## Installation
+1. Install .net SDK from 
+```
+https://dotnet.microsoft.com/en-us/download
+https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+```
+
+2. Install .NET MAUI workload with the dotnet CLI. A .NET "workload" is a collection of packs
+``` bash
+$ sudo dotnet workload install maui
+```
+or
+
+``` bash
+$ sudo dotnet workload install maui --source https://api.nuget.org/v3/index.json
+```
+
+3. Verify and install missing components with maui-check command line utility.
+``` bash
+$ sudo dotnet tool install -g redth.net.MAUI.check
+$ sudo maui-check
+```
+
 ## Command
 1. Create MAUI App using Terminal command
 ``` bash
