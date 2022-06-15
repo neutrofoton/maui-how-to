@@ -2,9 +2,27 @@
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 
-#if __IOS__
+#nullable enable
+
+#if __IOS__ || __MACCATALYST__
 using UIKit;
+using PlatformView = UIKit.UIView;
+
+#elif __ANDROID__
+using PlatformView = Android.Views.View;
+
+#elif __WINDOWS__
+using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
+
+#elif __TIZEN__
+using PlatformView = ElmSharp.EvasObject;
+
+#elif (NETSTANDARD || !PLATFORM)
+using PlatformView = System.Object;
+
 #endif
+
+
 
 namespace Maui03Handler.Controls
 {

@@ -24,7 +24,8 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
-          
+
+         
             
             <Label 
                 Text="Welcome to .NET Multi-platform App UI"
@@ -38,7 +39,7 @@
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" AkhiranIOS="ios"/>
 
         </VerticalStackLayout>
     </ScrollView>

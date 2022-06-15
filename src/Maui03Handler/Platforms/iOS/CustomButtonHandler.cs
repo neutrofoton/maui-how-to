@@ -13,24 +13,9 @@ namespace Maui03Handler.Controls
                 if(view is MyButton)
                 {
                     (handler.PlatformView as UIKit.UIView).BackgroundColor = Colors.Red.ToPlatform();
+                    (view as MyButton).Text += " " + (view as MyButton).AkhiranIOS;
                 }
             });
-
-            //EntryHandler.Mapper.AppendToMapping("MyCustomization", (handler, view) => {
-
-
-            //    if (view is MyEntry)
-            //    {
-
-
-            //        handler.PlatformView.BackgroundColor = Colors.YellowGreen.ToPlatform();
-            //        handler.PlatformView.BorderStyle = UIKit.UITextBorderStyle.RoundedRect;
-
-
-            //    }
-
-            //});
-
         }
 	}
 }
