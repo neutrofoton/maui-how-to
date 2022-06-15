@@ -39,7 +39,7 @@
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" AkhiranIOS="ios"/>
+                HorizontalOptions="Center" PrefixIOS="IOS"/>
 
         </VerticalStackLayout>
     </ScrollView>

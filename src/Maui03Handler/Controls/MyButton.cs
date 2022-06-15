@@ -7,13 +7,13 @@ namespace Maui03Handler.Controls
     
      
 
-        public static readonly BindableProperty AkhiranIOSProperty =
-            BindableProperty.Create(nameof(AkhiranIOS), typeof(string), typeof(MainPage), "");
+        public static readonly BindableProperty PrefixIOSProperty =
+            BindableProperty.Create(nameof(PrefixIOS), typeof(string), typeof(MainPage), "");
 
-        public string AkhiranIOS
+        public string PrefixIOS
         {
-            get { return (string)GetValue(AkhiranIOSProperty); }
-            set { SetValue(AkhiranIOSProperty, value); }
+            get { return (string)GetValue(PrefixIOSProperty); }
+            set { SetValue(PrefixIOSProperty, value); }
         }
         #endregion
     }

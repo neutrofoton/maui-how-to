@@ -13,7 +13,7 @@ namespace Maui03Handler.Controls
                 if(view is MyButton)
                 {
                     (handler.PlatformView as UIKit.UIView).BackgroundColor = Colors.Red.ToPlatform();
-                    (view as MyButton).Text += " " + (view as MyButton).AkhiranIOS;
+                    (view as MyButton).Text = $"{(view as MyButton).PrefixIOS} {(view as MyButton).Text}";
                 }
             });
         }
