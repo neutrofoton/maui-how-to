@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:entry="clr-namespace:Maui03Handler.Controls"
+             xmlns:custom="clr-namespace:Maui03Handler.Controls"
              x:Class="Maui03Handler.MainPage"
 
              >
@@ -18,7 +18,7 @@
                 HeightRequest="200"
                 HorizontalOptions="Center" />
                 
-            <entry:MyEntry 
+            <custom:MyEntry 
                 Text="Hello, World!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
@@ -33,7 +33,7 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Button 
+            <custom:MyButton 
                 x:Name="CounterBtn"
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
