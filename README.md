@@ -46,3 +46,8 @@ $ dotnet build -t:Run -f net6.0-ios -p:_DeviceName=:v2:udid=F2DC88C0-7936-465C-A
 $ dotnet sln MauiHowTo.sln add Maui01Hello/Maui01Hello.csproj
 ``` 
 
+3. Resize Android emulator (Mac) : CMD + Arrow UP/DOWN
+   
+
+## References
+1. .NET MAUI Docs: https://docs.microsoft.com/dotnet/maui/
