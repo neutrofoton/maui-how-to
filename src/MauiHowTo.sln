@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui04CollectionView", "Mau
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui05Mvvm", "Maui05Mvvm\Maui05Mvvm.csproj", "{5D3EE8C2-2CDB-4EB6-BAFA-50DEA4DD2F77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui06Carusel", "Maui06Carusel\Maui06Carusel.csproj", "{997A6312-A460-40E6-9F29-30E3022D3D46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,18 @@ Global
 		{5D3EE8C2-2CDB-4EB6-BAFA-50DEA4DD2F77}.Release|x64.Build.0 = Release|Any CPU
 		{5D3EE8C2-2CDB-4EB6-BAFA-50DEA4DD2F77}.Release|x86.ActiveCfg = Release|Any CPU
 		{5D3EE8C2-2CDB-4EB6-BAFA-50DEA4DD2F77}.Release|x86.Build.0 = Release|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Debug|x64.Build.0 = Debug|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Debug|x86.Build.0 = Debug|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Release|x64.ActiveCfg = Release|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Release|x64.Build.0 = Release|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Release|x86.ActiveCfg = Release|Any CPU
+		{997A6312-A460-40E6-9F29-30E3022D3D46}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

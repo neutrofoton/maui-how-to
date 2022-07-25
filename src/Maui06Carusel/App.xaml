@@ -1,8 +1,8 @@
 ﻿<?xml version = "1.0" encoding = "UTF-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Maui05Mvvm"
-             x:Class="Maui05Mvvm.App">
+             xmlns:local="clr-namespace:Maui06Carusel"
+             x:Class="Maui06Carusel.App">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -10,7 +10,8 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
 
                 <!--Custom Style for UI-->
-                <ResourceDictionary Source="Resources/Styles/CustomStyles.xaml" />
+                <!--<ResourceDictionary Source="Resources/Styles/CustomStyles.xaml" />-->
+
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
