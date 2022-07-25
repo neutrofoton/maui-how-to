@@ -7,33 +7,7 @@
              Title="{Binding Title}"
              x:Class="Maui06Carusel.MainPage">
 			 
-    <!--<Grid RowDefinitions="*,*">
-        <StackLayout>
-        <CarouselView ItemsSource="{Binding ImagesList}"
-                      Margin="10"
-                      IndicatorView="IndicatorView">
-            <CarouselView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout>
-                        <Frame HasShadow="True"
-                               Margin="5"
-                               Padding="5">
-                            <Image Source="{Binding }"
-                                   Aspect="AspectFill"/>
-                        </Frame>
-                    </StackLayout>
-                </DataTemplate>
-            </CarouselView.ItemTemplate>
-
-        </CarouselView>
-        <IndicatorView x:Name="IndicatorView"
-                       IndicatorColor="LightGray"
-                       SelectedIndicatorColor="Black"
-                       HorizontalOptions="Center">
-            
-        </IndicatorView>
-        </StackLayout>
-    </Grid>-->
+    
 
     <VerticalStackLayout
             >
@@ -83,7 +57,9 @@
                         <StackLayout>
                             <Frame HasShadow="True"
                                    Margin="5"
-                                   Padding="5">
+                                   Padding="5"
+                                   HeightRequest="200"
+                                   >
                                 <Image Source="{Binding Image}"
                                        Aspect="AspectFill"/>
                             </Frame>
