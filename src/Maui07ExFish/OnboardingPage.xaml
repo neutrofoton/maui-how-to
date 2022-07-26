@@ -49,7 +49,17 @@
                     <DataTemplate x:DataType="models:OnboardingModel">
                         <Grid RowDefinitions="1.5*, 1*" RowSpacing="0">
 
-                            <Image Aspect="AspectFill" Source="{Binding Image}" />
+                            <!--<Image Aspect="AspectFill" Source="{Binding Image}" />-->
+
+                            <Image Source="{Binding Image}"
+                                   Aspect="AspectFill">
+                                <Image.Clip>
+                                    <EllipseGeometry Center="390,140"
+                                        RadiusX="500"
+                                                     />
+                                </Image.Clip>
+                                
+                            </Image>
 
                             <StackLayout Grid.Row="1" Spacing="0">
                                 <Label
@@ -86,6 +96,7 @@
             </magic:GradientView>-->
 
 
+            
             <!--<BoxView Grid.Row="1" Color="{StaticResource Background}" />-->
             <StackLayout
                 Grid.Row="1"
