@@ -8,6 +8,8 @@
              x:Class="Maui07ExFish.OnboardingPage"
              
              >
+
+    
 			 
     <ContentPage.BindingContext>
         <viewModels:OnboardingViewModel />
@@ -34,7 +36,7 @@
         </Style>
     </ContentPage.Resources>
 
-
+    
     <ContentPage.Content>
         <Grid
             BackgroundColor="{StaticResource Background}"
@@ -49,17 +51,20 @@
                     <DataTemplate x:DataType="models:OnboardingModel">
                         <Grid RowDefinitions="1.5*, 1*" RowSpacing="0">
 
-                            <!--<Image Aspect="AspectFill" Source="{Binding Image}" />-->
+                            
+                            <Image Aspect="AspectFill" Source="{Binding Image}" ZIndex="1" />
+                            <Rectangle ZIndex="2" Aspect="Fill">
+                                <Rectangle.Background>
+                                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                        <GradientStop Offset="0" Color="Transparent"/>
+                                        <GradientStop Offset="0.9" Color="#0012140C" />
+                                        <GradientStop Offset="1" Color="{StaticResource Background}"/>
+                                    </LinearGradientBrush>
 
-                            <Image Source="{Binding Image}"
-                                   Aspect="AspectFill">
-                                <Image.Clip>
-                                    <EllipseGeometry Center="390,140"
-                                        RadiusX="500"
-                                        RadiusY="320" />
-                                </Image.Clip>
-                                
-                            </Image>
+                                    <!--<SolidColorBrush Color="Red"/>-->
+
+                                </Rectangle.Background>
+                            </Rectangle>
 
                             <StackLayout Grid.Row="1" Spacing="0">
                                 <Label
@@ -74,7 +79,6 @@
                                     Style="{StaticResource OnboardingContent}"
                                     Text="{Binding Content}" />
 
-                                <!--<Image Source="selected_indicator.png"/>-->
                             </StackLayout>
 
                         </Grid>
@@ -95,8 +99,8 @@
                 </magic:GradientCollection>
             </magic:GradientView>-->
 
-
-            
+             
+           
             <!--<BoxView Grid.Row="1" Color="{StaticResource Background}" />-->
             <StackLayout
                 Grid.Row="1"

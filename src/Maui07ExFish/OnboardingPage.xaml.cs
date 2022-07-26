@@ -13,6 +13,8 @@ public partial class OnboardingPage : ContentPage
 	{
 		//await FadeBox.FadeTo(1, 500);
 		//await Navigation.PopModalAsync(false);
+
+		
 	}
 }
 
