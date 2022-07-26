@@ -42,7 +42,7 @@
             BackgroundColor="{StaticResource Background}"
             RowDefinitions="1.5*, 1*"
             RowSpacing="0">
-            <CarouselView
+            <CarouselView x:Name="fishingCaruselView"
                 Grid.Row="0"
                 Grid.RowSpan="2"
                 IndicatorView="indicatorView"
