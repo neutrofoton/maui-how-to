@@ -142,7 +142,7 @@
                             CornerRadius="16"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            Source="NextButtonIcon"
+                            Source="next_button_icon.png"
                             VerticalOptions="Center"
                             WidthRequest="50" />
                     </Grid>
