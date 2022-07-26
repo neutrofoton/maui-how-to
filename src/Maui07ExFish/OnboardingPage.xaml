@@ -85,33 +85,13 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
-            <!--<magic:GradientView Margin="0,0,0,-1" InputTransparent="True">
-                <magic:GradientCollection>
-                    <magic:RadialGradient
-                        x:Name="MyRadialGradient"
-                        Center=".3,0"
-                        RadiusX="3000">
-                        <magic:GradientStop Offset="0" Color="Transparent" />
-                        <magic:GradientStop Offset=".9" Color="Transparent" />
-                        <magic:GradientStop Offset=".91" Color="#0012140C" />
-                        <magic:GradientStop Offset="1" Color="{StaticResource Background}" />
-                    </magic:RadialGradient>
-                </magic:GradientCollection>
-            </magic:GradientView>-->
-
+            
              
-           
-            <!--<BoxView Grid.Row="1" Color="{StaticResource Background}" />-->
             <StackLayout
                 Grid.Row="1"
                 Orientation="Vertical"
                 VerticalOptions="End">
-                <!--<Slider
-                    Maximum="10"
-                    Minimum="0"
-                    ValueChanged="Slider_ValueChanged"
-                    Value="1" />-->
-
+               
             </StackLayout>
 
 
