@@ -6,7 +6,8 @@
              xmlns:viewModels="clr-namespace:Maui07ExFish.ViewModels"
              xmlns:models="clr-namespace:Maui07ExFish.Models"
              x:Class="Maui07ExFish.OnboardingPage"
-             
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              >
 
     
