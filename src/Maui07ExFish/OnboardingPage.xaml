@@ -56,7 +56,7 @@
                                 <Image.Clip>
                                     <EllipseGeometry Center="390,140"
                                         RadiusX="500"
-                                                     />
+                                        RadiusY="320" />
                                 </Image.Clip>
                                 
                             </Image>
