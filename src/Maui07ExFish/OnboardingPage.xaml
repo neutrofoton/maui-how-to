@@ -2,28 +2,30 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Maui07ExFish.Controls"
-            xmlns:templates="clr-namespace:Maui07ExFish.Templates"
-            xmlns:viewModels="clr-namespace:Maui07ExFish.ViewModels"
+             xmlns:templates="clr-namespace:Maui07ExFish.Templates"
+             xmlns:viewModels="clr-namespace:Maui07ExFish.ViewModels"
              xmlns:models="clr-namespace:Maui07ExFish.Models"
-             x:Class="Maui07ExFish.OnboardingPage">
+             x:Class="Maui07ExFish.OnboardingPage"
+             
+             >
 			 
     <ContentPage.BindingContext>
         <viewModels:OnboardingViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
-        <Style x:Key="IndicatorStyle" TargetType="Image">
+        <Style x:Key="CustomIndicatorStyle" TargetType="Image">
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup x:Name="CommonStates">
                         <VisualState x:Name="Normal">
                             <VisualState.Setters>
-                                <Setter Property="Source" Value="unselected_indicator" />
+                                <Setter Property="Source" Value="unselected_indicator.png" />
                             </VisualState.Setters>
                         </VisualState>
                         <VisualState x:Name="Selected">
                             <VisualState.Setters>
-                                <Setter Property="Source" Value="selected_indicator" />
+                                <Setter Property="Source" Value="selected_indicator.png" />
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>
@@ -62,6 +64,7 @@
                                     Style="{StaticResource OnboardingContent}"
                                     Text="{Binding Content}" />
 
+                                <!--<Image Source="selected_indicator.png"/>-->
                             </StackLayout>
 
                         </Grid>
@@ -93,6 +96,7 @@
                     Minimum="0"
                     ValueChanged="Slider_ValueChanged"
                     Value="1" />-->
+
             </StackLayout>
 
 
@@ -111,7 +115,7 @@
                     SelectedIndicatorColor="Transparent">
                     <IndicatorView.IndicatorTemplate>
                         <DataTemplate>
-                            <Image Source="unselected_indicator" Style="{StaticResource IndicatorStyle}" />
+                            <Image Style="{StaticResource CustomIndicatorStyle}" />
                         </DataTemplate>
                     </IndicatorView.IndicatorTemplate>
                 </IndicatorView>
