@@ -24,8 +24,8 @@ namespace Maui07ExFish.ViewModels
                 {
                     Title = "Discover nature and catch the fish",
                     Content = "Crazy houndshark with pipefish snake eel. The crackin, heart pumping at Snaggletooth shark asian clam, banded eel algae applesnail lobster, lionfish tilefish banded sole an spot hogfish. Parrotfish at crazy houndshark with pipefish snake eel.",
-                    //Image  = "on_board_image1.png"
-                    Image = "https://images.pexels.com/photos/1069712/pexels-photo-1069712.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    Image  = "on_board_image1.png"
+                    //Image = "https://images.pexels.com/photos/1069712/pexels-photo-1069712.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                 },
                 new OnboardingModel
                 {

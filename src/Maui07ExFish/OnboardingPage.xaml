@@ -18,12 +18,12 @@
                     <VisualStateGroup x:Name="CommonStates">
                         <VisualState x:Name="Normal">
                             <VisualState.Setters>
-                                <Setter Property="Source" Value="UnselectedIndicator" />
+                                <Setter Property="Source" Value="unselected_indicator" />
                             </VisualState.Setters>
                         </VisualState>
                         <VisualState x:Name="Selected">
                             <VisualState.Setters>
-                                <Setter Property="Source" Value="SelectedIndicator" />
+                                <Setter Property="Source" Value="selected_indicator" />
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>
@@ -111,7 +111,7 @@
                     SelectedIndicatorColor="Transparent">
                     <IndicatorView.IndicatorTemplate>
                         <DataTemplate>
-                            <Image Source="UnSelectedIndicator" Style="{StaticResource IndicatorStyle}" />
+                            <Image Source="unselected_indicator" Style="{StaticResource IndicatorStyle}" />
                         </DataTemplate>
                     </IndicatorView.IndicatorTemplate>
                 </IndicatorView>
