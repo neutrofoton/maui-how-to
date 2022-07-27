@@ -73,6 +73,7 @@
 	  <None Remove="Templates\" />
 	  <None Remove="Controls\" />
 	  <None Remove="Resources\Images\" />
+	  <None Remove="CommunityToolkit.Mvvm" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
@@ -84,7 +85,6 @@
 	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
 	</ItemGroup>
-	
 </Project>

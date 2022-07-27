@@ -1,15 +1,15 @@
 ﻿using System;
-using Microsoft.Toolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Maui07ExFish.ViewModels
 {
 	public class BaseViewModel : ObservableObject
 	{
-		private string? title = string.Empty;
+		private string title = string.Empty;
 
-		private string? subtitle = string.Empty;
+		private string subtitle = string.Empty;
 
-		private string? icon = string.Empty;
+		private string icon = string.Empty;
 
 		private bool isBusy;
 
@@ -17,15 +17,15 @@ namespace Maui07ExFish.ViewModels
 
 		private bool canLoadMore = true;
 
-		private string? header = string.Empty;
+		private string header = string.Empty;
 
-		private string? footer = string.Empty;
+		private string footer = string.Empty;
 
 		/// <summary>
 		/// Gets or sets the title.
 		/// </summary>
 		/// <value>The title.</value>
-		public string? Title
+		public string Title
 		{
 			get
 			{
@@ -41,7 +41,7 @@ namespace Maui07ExFish.ViewModels
 		/// Gets or sets the subtitle.
 		/// </summary>
 		/// <value>The subtitle.</value>
-		public string? Subtitle
+		public string Subtitle
 		{
 			get
 			{
@@ -57,7 +57,7 @@ namespace Maui07ExFish.ViewModels
 		/// Gets or sets the icon.
 		/// </summary>
 		/// <value>The icon.</value>
-		public string? Icon
+		public string Icon
 		{
 			get
 			{
@@ -127,7 +127,7 @@ namespace Maui07ExFish.ViewModels
 		/// Gets or sets the header.
 		/// </summary>
 		/// <value>The header.</value>
-		public string? Header
+		public string Header
 		{
 			get
 			{
@@ -143,7 +143,7 @@ namespace Maui07ExFish.ViewModels
 		/// Gets or sets the footer.
 		/// </summary>
 		/// <value>The footer.</value>
-		public string? Footer
+		public string Footer
 		{
 			get
 			{

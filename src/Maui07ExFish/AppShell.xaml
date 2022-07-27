@@ -8,15 +8,15 @@
     
     >
 
-    <!--<ShellContent
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
+        Route="MainPage" />
 
-     <ShellContent
+     <!--<ShellContent
         Title="On Boarding"
         ContentTemplate="{DataTemplate local:OnboardingPage}"
         Route="OnboardingPage"
-        />
+        />-->
 
 </Shell>
