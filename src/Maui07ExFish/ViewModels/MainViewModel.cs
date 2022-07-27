@@ -29,7 +29,7 @@ namespace Maui07ExFish.ViewModels
             var firstLocation = new FishingLocationViewModel(
                 new FishingLocationModel()
                 {
-                    Name = "South Mandalika Lake",
+                    Name = "1. South Mandalika Lake",
                     LatLong = "8°53'54.2“S 116°18'14.2“E",
                     LocationThumbnail = "https://raw.githubusercontent.com/kphillpotts/Fishing/main/images/Location1.png",
                     MapThumbnail = "https://raw.githubusercontent.com/kphillpotts/Fishing/main/images/Location1Map.png",
@@ -79,7 +79,7 @@ namespace Maui07ExFish.ViewModels
             var secondLocation = new FishingLocationViewModel(
                 new FishingLocationModel()
                 {
-                    Name = "North Mandalika Lake",
+                    Name = "2. North Mandalika Lake",
                     LatLong = "8°53'54.2“S 116°18'14.2“E",
                     LocationThumbnail = "https://raw.githubusercontent.com/kphillpotts/Fishing/main/images/Location2.png",
                     MapThumbnail = "https://raw.githubusercontent.com/kphillpotts/Fishing/main/images/Location2Map.png",

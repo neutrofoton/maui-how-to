@@ -63,6 +63,10 @@
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="OnboardingPage.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Controls\GradientBorder.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
+	  
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="ViewModels\" />

@@ -95,7 +95,7 @@
                         <Label Style="{StaticResource PageSubHeader}" Text="It's a great day to strike a fish" />
                     </StackLayout>
 
-                    <controls:GradientFrame Grid.Column="1" Padding="10">
+                    <controls:GradientBorder Grid.Column="1" Padding="10">
 
                         <Image
                             HeightRequest="50"
@@ -105,14 +105,14 @@
                                 <RoundRectangleGeometry CornerRadius="8" Rect="0,0,50,50" />
                             </Image.Clip>
                         </Image>
-                    </controls:GradientFrame>
+                    </controls:GradientBorder>
 
 
 
                 </Grid>
 
                 <!--  Weather  -->
-                <Border 
+                <controls:GradientBorder
                     HorizontalOptions="Center"
                     
                     >
@@ -127,7 +127,7 @@
                             <GradientStop Offset="1" Color="{StaticResource Background}" />
                         </LinearGradientBrush>
                     </Border.Background>
-                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto" Margin="10">
+                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto" Margin="5">
 
                         <StackLayout>
                             <Label Style="{StaticResource SectionHeader}" Text="{Binding Location}" />
@@ -169,7 +169,7 @@
                         </Label>
 
                     </Grid>
-                </Border>
+                </controls:GradientBorder>
 
                     
                 
@@ -182,8 +182,8 @@
                     ItemsSource="{Binding FishingLocations}">
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <controls:GradientFrame Padding="20">
-                                <Grid RowDefinitions="50, 40, 100, 120" RowSpacing="10">
+                            <controls:GradientBorder Padding="20">
+                                <Grid RowDefinitions="50, 40, 100, 120" RowSpacing="10" Padding="5">
 
                                     <Grid ColumnDefinitions="*, Auto">
                                         <StackLayout>
@@ -261,7 +261,7 @@
                                     </StackLayout>
 
                                 </Grid>
-                            </controls:GradientFrame>
+                            </controls:GradientBorder>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
 
