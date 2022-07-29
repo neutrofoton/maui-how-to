@@ -19,5 +19,15 @@ public partial class MainPage : ContentPage
         //var locationPage = new FishingLocationPage(panViewModel);
         //this.Navigation.PushAsync(locationPage);
     }
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+    }
+
+    protected override void OnNavigatingFrom(NavigatingFromEventArgs args)
+    {
+        base.OnNavigatingFrom(args);
+    }
 }
 

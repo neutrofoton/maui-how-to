@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.Input;
 using Maui07ExFish.Models;
+using Maui07ExFish.Services;
+using Maui07ExFish.Services.Impl;
 
 namespace Maui07ExFish.ViewModels
 {
-    public class OnboardingViewModel : BaseViewModel
+    public partial class OnboardingViewModel : BaseViewModel
     {
-        private ObservableCollection<OnboardingModel> items;
-
-        public ObservableCollection<OnboardingModel> Items
-        {
-            get => items;
-            set => SetProperty(ref items, value);
-        }
-
+        private IAlertService alertService;
 
         public OnboardingViewModel()
         {
+            this.alertService = new AlertService();
+
             // create our dummy onboarding items
             Items = new ObservableCollection<OnboardingModel>
             {
@@ -50,6 +48,21 @@ namespace Maui07ExFish.ViewModels
 
         }
 
+        private ObservableCollection<OnboardingModel> items;
+
+        public ObservableCollection<OnboardingModel> Items
+        {
+            get => items;
+            set => SetProperty(ref items, value);
+        }
+
+        [ICommand]
+        public Task GoToMainPage()
+        {
+            Shell.Current.GoToAsync(nameof(MainPage));
+            //alertService.ShowAlert("DEBUG", "Hello Call Navigate to Main");
+            return Task.CompletedTask;
+        }
     }
 }
 

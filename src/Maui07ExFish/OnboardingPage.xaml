@@ -6,6 +6,7 @@
              xmlns:viewModels="clr-namespace:Maui07ExFish.ViewModels"
              xmlns:models="clr-namespace:Maui07ExFish.Models"
              x:Class="Maui07ExFish.OnboardingPage"
+             x:DataType="viewModels:OnboardingViewModel"
              NavigationPage.HasNavigationBar="False"
              Shell.NavBarIsVisible="False"
              >
@@ -139,7 +140,7 @@
                             Grid.Column="1"
                             Padding="14"
                             BackgroundColor="{StaticResource Accent}"
-                            Clicked="Button_Clicked"
+                            Command="{Binding GoToMainPageCommand}"
                             CornerRadius="16"
                             HeightRequest="50"
                             HorizontalOptions="End"

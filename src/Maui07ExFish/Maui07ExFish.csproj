@@ -78,6 +78,10 @@
 	  <None Remove="Controls\" />
 	  <None Remove="Resources\Images\" />
 	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Services\" />
+	  <None Remove="Services\Impl\" />
+	  <None Remove="Extensions\" />
+	  <None Remove="CommunityToolkit.Maui" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
@@ -87,6 +91,9 @@
 	  <Folder Include="Templates\" />
 	  <Folder Include="Controls\" />
 	  <Folder Include="Resources\Images\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Services\Impl\" />
+	  <Folder Include="Extensions\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />

@@ -14,13 +14,6 @@ public partial class OnboardingPage : ContentPage
 
     }
 
-	private async void Button_Clicked(object sender, EventArgs e)
-	{
-		//await FadeBox.FadeTo(1, 500);
-		//await Navigation.PopModalAsync(false);
-
-		
-	}
 
     private void AnimateCarusel()
     {
