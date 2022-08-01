@@ -8,15 +8,21 @@
     
     >
 
+    <ShellContent
+        Title="On Boarding"
+        ContentTemplate="{DataTemplate local:OnboardingPage}"
+        Route="OnboardingPage"
+        />
+
     <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />-->
 
-     <ShellContent
-        Title="On Boarding"
-        ContentTemplate="{DataTemplate local:OnboardingPage}"
-        Route="OnboardingPage"
-        />
+     <!--<ShellContent
+        Title="Fishing Location Page"
+        ContentTemplate="{DataTemplate local:FishingLocationPage}"
+        Route="FishingLocationPage"
+        />-->
 
 </Shell>

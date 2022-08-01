@@ -1,4 +1,6 @@
-﻿namespace Maui07ExFish;
+﻿using SkiaSharp.Views.Maui.Controls.Hosting;
+
+namespace Maui07ExFish;
 
 
 public static class MauiProgram
@@ -9,6 +11,7 @@ public static class MauiProgram
 
 		builder
 			.UseMauiApp<App>()
+			.UseSkiaSharp()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

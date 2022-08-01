@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
+             xmlns:controls="clr-namespace:Maui07ExFish.Controls"
+             xmlns:templates="clr-namespace:Maui07ExFish.Templates"
+             xmlns:viewModels="clr-namespace:Maui07ExFish.ViewModels"
+             x:Class="Maui07ExFish.FishingLocationPage"
+             BackgroundColor="{StaticResource Background}"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <Grid>
+        <skia:SKCanvasView
+            x:Name="Panorama"
+            EnableTouchEvents="True"
+            PaintSurface="SKCanvasView_PaintSurface"
+            Touch="Panorama_Touch">
+            <skia:SKCanvasView.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated" />
+            </skia:SKCanvasView.GestureRecognizers>
+        </skia:SKCanvasView>
+
+        <Frame
+            Padding="10"
+            BorderColor="Transparent"
+            CornerRadius="15"
+            HasShadow="False"
+            HorizontalOptions="Start"
+            TranslationX="20"
+            TranslationY="20"
+            VerticalOptions="Start">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Offset=".1" Color="Transparent" />
+                    <GradientStop Offset="1" Color="#33ffffff" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Button
+                    x:Name="BackNavigation"
+                    BackgroundColor="White"
+                    Clicked="BackNavigation_Clicked"
+                    CornerRadius="10"
+                    HeightRequest="40"
+                    WidthRequest="40" />
+                <Polyline
+                    HorizontalOptions="Center"
+                    Points="10,2 2,8 10,14"
+                    Stroke="Black"
+                    StrokeLineCap="Round"
+                    StrokeThickness="3"
+                    VerticalOptions="Center" />
+
+            </Grid>
+        </Frame>
+
+        <Frame
+            x:Name="Popup"
+            Margin="20"
+            Padding="0"
+            CornerRadius="20"
+            HasShadow="False"
+            VerticalOptions="End">
+            <Grid
+                Padding="0"
+                RowDefinitions="100, 120"
+                VerticalOptions="End">
+                <Grid Grid.Row="0" ColumnDefinitions="Auto, *">
+                    <Image
+                        HeightRequest="100"
+                        Source="{Binding WeatherIcon}"
+                        WidthRequest="100" />
+                    <StackLayout
+                        Grid.Column="1"
+                        Margin="20"
+                        Spacing="6"
+                        VerticalOptions="Center">
+                        <Label
+                            Style="{StaticResource SectionHeader}"
+                            Text="{Binding Location.Name}"
+                            TextColor="Black" />
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                                HeightRequest="16"
+                                Source="MapIndicator"
+                                WidthRequest="16" />
+                            <Label Style="{StaticResource SectionDetail}" Text="{Binding Location.LatLong}" />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <BoxView
+                        Grid.ColumnSpan="2"
+                        Margin="20,0"
+                        HeightRequest="1"
+                        VerticalOptions="End"
+                        Color="LightGray" />
+
+                </Grid>
+
+                <Grid
+                    Grid.Row="1"
+                    ColumnDefinitions="1*, 1.5*"
+                    RowDefinitions="25, 50, 25">
+
+                    <Label
+                        Margin="20,0"
+                        Style="{StaticResource SectionDetail}"
+                        Text="Bite-Time"
+                        TextColor="{StaticResource BodyText}" />
+                    <Label
+                        Grid.Row="2"
+                        Margin="20,0"
+                        LineBreakMode="NoWrap"
+                        Text="{Binding SelectedFish.Name}"
+                        TextTransform="Uppercase" />
+                    <Image Grid.Row="1" Source="{Binding SelectedFish.Image}" />
+                    <skia:SKCanvasView
+                        x:Name="BiteTimeChart"
+                        Grid.RowSpan="2"
+                        Grid.Column="1"
+                        Margin="0,0,20,0"
+                        PaintSurface="BiteTimeChart_PaintSurface" />
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Style="{StaticResource SectionDetail}"
+                        Text="00:00"
+                        TextColor="{StaticResource BodyText}" />
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Margin="0,0,20,0"
+                        HorizontalOptions="End"
+                        Style="{StaticResource SectionDetail}"
+                        Text="24:00"
+                        TextColor="{StaticResource BodyText}" />
+                </Grid>
+
+            </Grid>
+        </Frame>
+    </Grid>
+
+
+ </ContentPage>
