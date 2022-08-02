@@ -1,5 +1,6 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
+using Maui08ExWeather.Model;
 
 namespace Maui08ExWeather.ViewModels
 {
@@ -22,6 +23,22 @@ namespace Maui08ExWeather.ViewModels
 
         [ObservableProperty]
         long sunset;
+
+        public static implicit operator SysViewModel(Sys value)
+        {
+            if (value == null)
+                return null;
+
+            return new SysViewModel()
+            {
+                Type = value.Type,
+                Id = value.Id,
+                Message = value.Message,
+                Country = value.Country,
+                Sunrise = value.Sunrise,
+                Sunset = value.Sunset
+            };
+        }
     }
 }
 

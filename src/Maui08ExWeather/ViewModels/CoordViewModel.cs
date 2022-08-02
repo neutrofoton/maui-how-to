@@ -1,5 +1,6 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
+using Maui08ExWeather.Model;
 
 namespace Maui08ExWeather.ViewModels
 {
@@ -10,6 +11,18 @@ namespace Maui08ExWeather.ViewModels
 
         [ObservableProperty]
         double lat;
+
+        public static implicit operator CoordViewModel(Coord value)
+        {
+            if (value == null)
+                return null;
+
+            return new CoordViewModel()
+            {
+                Lat=value.Lat,
+                Lon=value.Lon
+            };
+        }
     }
 }
 

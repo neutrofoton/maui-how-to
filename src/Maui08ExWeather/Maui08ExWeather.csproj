@@ -50,11 +50,15 @@
 	  <None Remove="ViewModels\" />
 	  <None Remove="CommunityToolkit.Mvvm" />
 	  <None Remove="Model\" />
+	  <None Remove="Services\" />
+	  <None Remove="Services\Impl\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Converters\" />
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Model\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Services\Impl\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />

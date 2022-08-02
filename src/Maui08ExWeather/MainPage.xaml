@@ -24,6 +24,10 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
+    <ContentPage.BindingContext>
+        <viewModel:WeatherDataViewModel/>
+    </ContentPage.BindingContext>
+
     <Grid VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -47,29 +51,29 @@
             Spacing="20"
             VerticalOptions="Start">
             <StackLayout Orientation="Horizontal">
-                <!--<Label
+                <Label
                     FontSize="16"
                     Text="{Binding Title}"
                     TextColor="White"
-                    VerticalOptions="Center" />-->
-
-                 <Label
-                    FontSize="16"
-                    Text="Cuaca Hari ini"
-                    TextColor="White"
                     VerticalOptions="Center" />
 
-                <!--<Label
+                 <!--<Label
                     FontSize="16"
-                    Text="{Binding Sys.Country, StringFormat=' , {0}'}"
+                    Text="Cuaca Hari ini"
                     TextColor="White"
                     VerticalOptions="Center" />-->
 
                 <Label
                     FontSize="16"
-                    Text="Indonesia"
+                    Text="{Binding Sys.Country, StringFormat=' , {0}'}"
                     TextColor="White"
                     VerticalOptions="Center" />
+
+                <!--<Label
+                    FontSize="16"
+                    Text="Indonesia"
+                    TextColor="White"
+                    VerticalOptions="Center" />-->
             </StackLayout>
         </StackLayout>
 
@@ -84,19 +88,19 @@
                     Source="weather.png"
                     VerticalOptions="Center"
                     WidthRequest="50" />
-                <!--<Label
+                <Label
                     FontAttributes="Bold"
                     FontSize="70"
                     Text="{Binding Main.Temperature, Converter={StaticResource fahrenheitToCelciusConverter}}"
                     TextColor="White"
-                    VerticalOptions="Center" />-->
+                    VerticalOptions="Center" />
 
-                <Label
+                <!--<Label
                     FontAttributes="Bold"
                     FontSize="70"
                     Text="37"
                     TextColor="White"
-                    VerticalOptions="Center" />
+                    VerticalOptions="Center" />-->
                 <Label
                     FontSize="34"
                     Text="°C"
@@ -108,11 +112,18 @@
                 HorizontalOptions="Center"
                 Text="{Binding Weather[0].Description}"
                 TextColor="White" />-->
+
             <Label
                 FontSize="16"
                 HorizontalOptions="Center"
-                Text="Mendung Berawan"
+                Text="{Binding AWeather.Description}"
                 TextColor="White" />
+
+            <!--<Label
+                FontSize="16"
+                HorizontalOptions="Center"
+                Text="Mendung Berawan"
+                TextColor="White" />-->
             <Label
                 FontSize="12"
                 HorizontalOptions="Center"
@@ -146,19 +157,19 @@
                     Spacing="10">
                     <Image Source="humidity.png" />
                     <StackLayout HorizontalOptions="CenterAndExpand" Spacing="7">
-                        <!--<Label
-                            FontAttributes="Bold"
-                            FontSize="14"
-                            HorizontalOptions="Center"
-                            Text="{Binding Main.Humidity}"
-                            TextColor="Black" />-->
-
                         <Label
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="40"
+                            Text="{Binding Main.Humidity}"
                             TextColor="Black" />
+
+                        <!--<Label
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            HorizontalOptions="Center"
+                            Text="40"
+                            TextColor="Black" />-->
                         <Label
                             FontSize="11"
                             HorizontalOptions="Center"
@@ -174,19 +185,19 @@
                     Spacing="10">
                     <Image Source="wind.png" />
                     <StackLayout HorizontalOptions="CenterAndExpand" Spacing="7">
-                        <!--<Label
-                            FontAttributes="Bold"
-                            FontSize="14"
-                            HorizontalOptions="Center"
-                            Text="{Binding Wind.Speed}"
-                            TextColor="Black" />-->
-
                         <Label
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="20"
+                            Text="{Binding Wind.Speed}"
                             TextColor="Black" />
+
+                        <!--<Label
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            HorizontalOptions="Center"
+                            Text="20"
+                            TextColor="Black" />-->
 
                         <Label
                             FontSize="11"
@@ -203,19 +214,19 @@
                     Spacing="10">
                     <Image Source="pressure.png" />
                     <StackLayout HorizontalOptions="CenterAndExpand" Spacing="7">
-                        <!--<Label
+                        <Label
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
                             Text="{Binding Main.Pressure}"
-                            TextColor="Black" />-->
+                            TextColor="Black" />
 
-                         <Label
+                         <!--<Label
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
                             Text="44"
-                            TextColor="Black" />
+                            TextColor="Black" />-->
 
                         <Label
                             FontSize="11"
@@ -232,19 +243,19 @@
                     Spacing="10">
                     <Image Source="cloudiness.png" />
                     <StackLayout HorizontalOptions="CenterAndExpand" Spacing="7">
-                        <!--<Label
-                            FontAttributes="Bold"
-                            FontSize="14"
-                            HorizontalOptions="Center"
-                            Text="{Binding Clouds.All}"
-                            TextColor="Black" />-->
-
                         <Label
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="All"
+                            Text="{Binding Clouds.All}"
                             TextColor="Black" />
+
+                        <!--<Label
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            HorizontalOptions="Center"
+                            Text="All"
+                            TextColor="Black" />-->
 
                         <Label
                             FontSize="11"
@@ -270,17 +281,17 @@
                     Text="Time of Sunrise"
                     TextColor="Black"
                     VerticalOptions="Center" />
-                <!--<Label
+                <Label
                     FontSize="15"
                     Text="{Binding Sys.Sunrise, Converter={StaticResource longToDatetimeConverter}}"
                     TextColor="Black"
-                    VerticalOptions="Center" />-->
+                    VerticalOptions="Center" />
 
-                <Label
+                <!--<Label
                     FontSize="15"
                     Text="04:30 AM"
                     TextColor="Black"
-                    VerticalOptions="Center" />
+                    VerticalOptions="Center" />-->
 
             </StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="40">
@@ -290,17 +301,17 @@
                     Text="Time of Sunset"
                     TextColor="Black"
                     VerticalOptions="Center" />
-                <!--<Label
+                <Label
                     FontSize="15"
                     Text="{Binding Sys.Sunset, Converter={StaticResource longToDatetimeConverter}}"
                     TextColor="Black"
-                    VerticalOptions="Center" />-->
+                    VerticalOptions="Center" />
 
-                <Label
+                <!--<Label
                     FontSize="15"
                     Text="18:07 PM"
                     TextColor="Black"
-                    VerticalOptions="Center" />
+                    VerticalOptions="Center" />-->
 
             </StackLayout>
         </StackLayout>
@@ -313,10 +324,10 @@
             <Entry
                 x:Name="_cityEntry"
                 Margin="5,0"
-                BackgroundColor="#7c58c9"
+                BackgroundColor="gray"
                 CharacterSpacing="7"
                 HorizontalTextAlignment="Center"
-                Text="Karachi"
+                Text="Jakarta"
                 TextColor="White"
                 VerticalOptions="Center"
                 WidthRequest="250" />
@@ -325,6 +336,7 @@
                 BorderColor="White"
                 BorderWidth="1"
                 Text="Get Weather"
+                Command="{Binding GetWeatherCommand}"
                 TextColor="White" />
         </StackLayout>
 
