@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Maui09ExBeautyUI.ViewModel"
+             x:Class="Maui09ExBeautyUI.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Label Text="Discover" TextColor="Black" FontSize="24" FontAttributes="Bold" Margin="15"/>
+
+
+        <CarouselView ItemsSource="{Binding Places}" HeightRequest="300" PeekAreaInsets="110">
+            
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout>
+                              <Frame HeightRequest="280" WidthRequest="180" 
+               
+                                   BackgroundColor="White" Padding="0"
+                                   HasShadow="True" Margin="10" CornerRadius="10"
+                                   HorizontalOptions="CenterAndExpand">
+                                <Grid>
+                                    <StackLayout  BackgroundColor="Black">
+                                        <Image Source="{Binding ImgSource}" 
+                                            HeightRequest="350" Opacity="0.6"
+                                            Aspect="AspectFill"/>
+                                    </StackLayout>
+                                    <StackLayout Margin="0,0,0,10">
+
+                                        <Image Source="https://images.vexels.com/media/users/3/147081/isolated/preview/8665e39f2880934120b3c37131210042-instagram-bookmark-icon-by-vexels.png" 
+                                           HeightRequest="50"
+                                           Aspect="AspectFit" HorizontalOptions="EndAndExpand" Margin="2,0"/>
+
+                                        <Label Text="{Binding Title}" TextColor="White" FontSize="18"
+                                           FontAttributes="None" Margin="15,0"
+                                           VerticalOptions="EndAndExpand"/>
+
+                                         <StackLayout Orientation="Horizontal"  Margin="15,-8,0,0">
+                                               <Image Source="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png" 
+                                                   HeightRequest="20"  Margin="-5,0"
+                                                   Aspect="AspectFit"/>
+                                                <Label Text="{Binding Country}" TextColor="White" FontSize="14"
+                                                   FontAttributes="None" 
+                                                   VerticalOptions="EndAndExpand"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+
+
+
+                            </Frame>
+                    </StackLayout>
+              
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Feeling adventurous?" TextColor="Black" FontSize="24" FontAttributes="Bold" Margin="15"/>
+            <Label HorizontalOptions="EndAndExpand" Text="Show all" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="15"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+            <StackLayout Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Kayak" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+            <StackLayout  Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Baloon" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+            <StackLayout  Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Hiking" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+            <StackLayout  Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Running" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>
