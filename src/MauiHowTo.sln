@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui08ExWeather", "Maui08Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui09ExBeautyUI", "Maui09ExBeautyUI\Maui09ExBeautyUI.csproj", "{AD4DD589-4AE8-4364-8439-9B5FC646EC70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui10ExWeather", "Maui10ExWeather\Maui10ExWeather.csproj", "{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,6 +160,18 @@ Global
 		{AD4DD589-4AE8-4364-8439-9B5FC646EC70}.Release|x64.Build.0 = Release|Any CPU
 		{AD4DD589-4AE8-4364-8439-9B5FC646EC70}.Release|x86.ActiveCfg = Release|Any CPU
 		{AD4DD589-4AE8-4364-8439-9B5FC646EC70}.Release|x86.Build.0 = Release|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Debug|x64.Build.0 = Debug|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Debug|x86.Build.0 = Debug|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Release|x64.ActiveCfg = Release|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Release|x64.Build.0 = Release|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Release|x86.ActiveCfg = Release|Any CPU
+		{2741ABBF-24EE-413C-8A71-1FA0CB7F0179}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
