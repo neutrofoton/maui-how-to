@@ -49,6 +49,27 @@
 	  <MauiXaml Update="Resources\Styles\DefaultTheme.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\HomePage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CurrentWidget.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Next24HrWidget.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Next7DWidget.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\WidgetsPanel.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\WindLiveWidget.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\EmptyPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="Services\" />
@@ -56,6 +77,9 @@
 	  <None Remove="Models\AzureModel\" />
 	  <None Remove="Extensions\" />
 	  <None Remove="Services\Impl\" />
+	  <None Remove="Pages\" />
+	  <None Remove="Views\" />
+	  <None Remove="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Services\" />
@@ -63,5 +87,8 @@
 	  <Folder Include="Models\AzureModel\" />
 	  <Folder Include="Extensions\" />
 	  <Folder Include="Services\Impl\" />
+	  <Folder Include="Pages\" />
+	  <Folder Include="Views\" />
+	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 </Project>

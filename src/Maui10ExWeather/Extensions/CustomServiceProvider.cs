@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Maui10ExWeather.Extensions
 {
-    public static class ServiceProviderExtension
+    public static class CustomServiceProvider
     {
 
         public static TService GetService<TService>()
